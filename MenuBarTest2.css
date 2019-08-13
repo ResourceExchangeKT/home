@@ -1,0 +1,541 @@
+/*https://alligator.io/css/css-grid-layout-fr-unit/*/
+
+
+.bigwrap{
+    position: relative;
+    width: 1120px;
+    margin: 40px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    border: 1px solid #ff0f0f;
+    box-shadow: 14px -1px 20px 3px rgba(255, 0, 0, 0.64);
+}
+
+.logotopcontainer{
+    margin: auto;
+    width: 300px;
+    height: 100px;
+    /*border: 1px solid black;*/
+    position: relative;
+}
+
+.ProfileName{
+    margin: auto;
+}
+
+.holder1{
+    margin: auto;
+    height: 60px;
+    width: 260px;
+    position: relative;
+}
+
+.ResourceNetworkLogoP1{
+    height: 50px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    font-size: 2.25em;
+    text-align: center;
+    position: absolute;
+}
+
+.Resource1{
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: -31px;
+}
+
+.Triangle1{
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid red;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    /* top: 40px; */
+    left: 210px;
+}
+
+.holder2{
+    margin: auto;
+    height: 60px;
+    width: 260px;
+    position: relative;
+}
+
+.Resource2{
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    font-weight: 900;
+    top: -31px;
+}
+
+.Triangle2{
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 50px solid #d8d4d4;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 210px;
+}
+
+.ResourceNetworkLogoP2{
+    height: 50px;
+    width: 200px;
+    background-color: #d8d4d4;
+    color: white;
+    font-size: 2.25em;
+    text-align: center;
+    position: absolute;
+    left: 60px;
+    top: -10px;
+}
+
+.Menu-Section{
+    word-break: break-word;
+    background-color: #f3d2c3;
+}
+
+.Menu-Section a{
+    background-color: #f3d2c3;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.Menu-Section a.active {
+  background-color: #ff0000;
+  color: white;
+}
+
+.Menu-Section a:hover {
+  background-color: #ccc;
+}
+
+
+.usersProfile{
+color: red;
+    font-stretch: expanded;
+    text-transform: uppercase;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25em;
+    letter-spacing: 10px;
+    /*position: absolute;*/
+    left: 130px;
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /*border: 1px solid black;*/
+    text-align: center;
+}
+
+.userpicture{
+    background-image: url(https://i.postimg.cc/PqTVXCz2/KT.jpg);
+    height: 175px;
+    width: 175px;
+    border: solid 10px white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block; 
+    /*border-radius: 10px;*/
+    border-bottom-right-radius: 10px; 
+}
+
+.picturecaption{
+    text-align: left;
+    display: inline-block; 
+    padding-left: 10px;
+}
+
+.profilebox{
+    background-color: #f3d2c3;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.mailshow {
+    margin-top: 30px;
+    background-image: url(https://i.postimg.cc/25FvmwsP/mail-open-outline-2.png); 
+    margin-top: 20px;
+    height: 50px;
+    width: 50px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 130px;
+}
+
+.userinfo{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 7px;
+}
+
+.Menu-Section{
+    /*border: 1px solid black;*/
+    border-left: 5px solid red;
+}
+
+.shogun{
+  border-top: 5px solid red;
+}
+
+.shogun{
+    display: grid;
+    grid-template-columns: 1fr;
+    /*grid-template-rows:;*/
+
+    grid-template-areas:
+        "Menu-Section"
+        "featureandnetworkingbox"
+        "profilebox";   
+}
+
+ .wrapthis{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logotopcontainer"
+             "ProfileName";
+    }
+
+ /**/.profilebox{
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-areas:
+            "userpicture" 
+            "picturecaption"
+            "mailshow userinfo";
+    }
+
+.logotopcontainer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.ProfileName{
+    margin-right: 0;
+}
+
+.featureandnetworkingbox{
+   /*border: 1px solid black;*/ 
+   /*display: inline-block;*/
+   text-align: center;
+}
+
+.feature1{
+    margin-right: 7px;
+    position: relative;
+    vertical-align: middle;
+    text-transform: uppercase;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #c5cdfe;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 3px 5px #ccc;
+    -webkit-box-shadow: 0 3px 5px #ccc;
+    -o-box-shadow: 0 3px 5px #ccc;
+    -ms-box-shadow: 0 3px 5px #ccc;
+    box-shadow: 0 3px 5px #ccc;
+}
+
+.cvo{
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.feature2{
+    position: relative;
+    vertical-align: middle;
+    text-transform: uppercase;
+    width:150px;
+    height:150px;
+    display: inline-block; 
+    border-radius: 10px;
+    background-color: #fdfdb7;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 3px 5px #ccc;
+    -webkit-box-shadow: 0 3px 5px #ccc;
+    -o-box-shadow: 0 3px 5px #ccc;
+    -ms-box-shadow: 0 3px 5px #ccc;
+    box-shadow: 0 3px 5px #ccc;
+}
+
+.cwp{
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.feature3{
+    margin-right: 7px;
+    position: relative;
+    vertical-align: middle;
+    text-transform: uppercase;
+    width:150px;
+    height:150px;
+    display: inline-block; 
+    border-radius: 10px;
+    background-color: #d1ffb7;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 3px 5px #ccc;
+    -webkit-box-shadow: 0 3px 5px #ccc;
+    -o-box-shadow: 0 3px 5px #ccc;
+    -ms-box-shadow: 0 3px 5px #ccc;
+    box-shadow: 0 3px 5px #ccc;
+}
+
+.events{
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.feature4{
+    position: relative;
+    vertical-align: middle;
+    text-transform: uppercase;
+    width:150px;
+    height:150px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #eaa892;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 3px 5px #ccc;
+    -webkit-box-shadow: 0 3px 5px #ccc;
+    -o-box-shadow: 0 3px 5px #ccc;
+    -ms-box-shadow: 0 3px 5px #ccc;
+    box-shadow: 0 3px 5px #ccc;
+}
+
+.forum{
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.feature5{
+    margin-right: 7px;
+    position: relative;
+    vertical-align: middle;
+    text-transform: uppercase;
+    width:150px;
+    height:150px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #d5feec;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 3px 5px #ccc;
+    -webkit-box-shadow: 0 3px 5px #ccc;
+    -o-box-shadow: 0 3px 5px #ccc;
+    -ms-box-shadow: 0 3px 5px #ccc;
+    box-shadow: 0 3px 5px #ccc;
+}
+
+.resources{
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.feature6{
+    position: relative;
+    vertical-align: middle;
+    text-transform: uppercase;
+    width:150px;
+    height:150px;
+    display: inline-block;
+    border-radius: 10px; 
+    background-color: #d2befd;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 3px 5px #ccc;
+    -webkit-box-shadow: 0 3px 5px #ccc;
+    -o-box-shadow: 0 3px 5px #ccc;
+    -ms-box-shadow: 0 3px 5px #ccc;
+    box-shadow: 0 3px 5px #ccc;
+}
+
+.submit{
+    margin: 0;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.feature1, .feature2, .feature3, .feature4, .feature5, .feature6{
+    font-family: 'Lato', sans-serif;
+    width: 200px;
+    height: 200px;
+} 
+
+.feature1 a, .feature2 a, .feature3 a, .feature4 a, .feature5 a, .feature6 a{
+    text-decoration: none;
+    color: black;
+}
+
+/*.cvo, .cwp, .events, .forum, .resources, .submit{
+    position: absolute;
+}*/
+
+.networkingwall{
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    background-color: #e9e9e1;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.networkwll{
+    text-align: center;
+    text-transform: uppercase;
+     font-weight: 500;
+}
+
+.featureandnetworkingbox{
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px;
+  grid-gap: 5px;
+
+  grid-template-areas:
+        "feature1 feature2"
+       	"feature3 feature4"
+        "feature5 feature6"
+        "networkingwallbox networkingwallbox";
+}
+
+
+/*between 500 and 400*/
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  body {
+    /*background-color: lightblue;*/
+    }
+}
+
+@media only screen and (min-width: 600px){
+
+    .featureandnetworkingbox{
+        margin-bottom: 20px;
+        margin-top: 20px; 
+    }
+	.featureandnetworkingbox{
+        width: 600px;
+		display: grid;
+        grid-gap: 10px;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+            "feature1 feature2 feature3"
+            "feature4 feature5 feature6";
+	}
+
+	.feature1, .feature2, .feature3, .feature4, .feature5, .feature6{
+    font-family: 'Lato', sans-serif;
+    width:100%;
+    height:200px;
+    }
+
+    /**/.profilebox{
+       display: grid;
+       grid-template-columns: 1fr 200px; /*100px repeat(1fr)*/
+       grid-template-rows: 200px;
+       grid-template-areas:
+            "userpicture picturecaption"
+            "mailshow userinfo";
+    }
+
+    .profilebox{
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .metal{
+        width: auto;
+    } 
+
+    .shogun{
+    display: grid;
+    grid-template-columns: 100px repeat(2, 1fr); /*1fr 1fr 1fr;*/
+    grid-column-gap: 10px;
+    /*grid-template-rows:;*/
+
+    grid-template-areas:
+        "Menu-Section"
+        "featureandnetworkingbox"
+        "profilebox";    
+    }
+
+    .networkingwallbox{
+        grid-column-end: span 3;
+    }
+    /*https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_order*/
+    div.Menu-Section{order: 1;}
+    div.profilebox {order: 3;}
+    div.featureandnetworkingbox {order: 2;}   
+
+    .wrapthis{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "logotopcontainer ProfileName"
+        ;
+    }
+
+}
